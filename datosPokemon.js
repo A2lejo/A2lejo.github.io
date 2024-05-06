@@ -38,4 +38,5 @@ const pintarPokemon = (data,id) =>{
     let item = listarPokemon.querySelector(`#pok-${id}`)
     console.log(data)
     item.getElementsByTagName ("img")[0].setAttribute("src", data.sprites.front_default)
+    item.getElementsByTagName ("p")[0].innerText=data.name
 }   
